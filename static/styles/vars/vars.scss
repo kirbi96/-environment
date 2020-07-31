@@ -1,0 +1,79 @@
+/* Font */
+$font__main: "SFUIDisplay", Arial, sans-serif;
+$font__code: Menlo, monaco, Consolas, Lucida Console, monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+
+/* Font size */
+$font__size: 18px;
+$font__size--mobile: 14px;
+
+$font__size-ratio: 1.125;
+$font__size-xxs: 1rem / (1.5 * $font__size-ratio); // 10.6px
+$font__size-xs: 1rem / (1.25 * $font__size-ratio); // 12.8px
+$font__size-sm: 1rem / (1 * $font__size-ratio); // 16px
+$font__size-md: 1rem * (1 * $font__size-ratio); //  20.25px
+$font__size-lg: 1rem * (1.2 * $font__size-ratio); // 24.3px
+$font__size-xl: 1rem * (1.5 * $font__size-ratio); // 30.375px;
+$font__size-xxl: 1rem * (2.5 * $font__size-ratio); // 50.625px
+$font__size-xxxl: 1rem * (3.5 * $font__size-ratio); // 70.875px
+
+$font__line-height-body: 1.6;
+$font__line-height-pre: 1.4;
+$font__line-height-sm: 1.125;
+$font__line-height-heading: 1.125;
+$font__line-height-double: 2 * $font__line-height-heading;
+
+/* Colors */
+$bgColor: #f7f8fb;
+$darkColor: #38364f;
+$textColor: #131d36;
+$blueColor: #2e85f7;
+
+/* Media queries */
+$mediaXl: "(max-width: 1199.98px)";
+$mediaLg: "(max-width: 991.98px)";
+$mediaMd: "(max-width: 767.98px)";
+$mediaSm: "(max-width: 575.98px)";
+$media475: "(max-width: 475.98px)";
+$media375: "(max-width: 375.98px)";
+$media320: "(max-width: 320.98px)";
+
+/* Functions */
+@mixin background($path, $position: center center, $repeat: no-repeat) {
+	background: url($path) $position $repeat;
+	background-size: cover;
+}
+@mixin text-overflow($lineClamp, $lineHeight) {
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lineClamp;
+	overflow: hidden;
+	height: $lineClamp * $lineHeight;
+}
+@mixin placeholder-style($placeholder-font, $placeholder-color) {
+	&::-webkit-input-placeholder {
+		font: $placeholder-font;
+		color: $placeholder-color;
+	}
+
+	&::-moz-placeholder {
+		font: $placeholder-font;
+		color: $placeholder-color;
+	}
+
+	&:-moz-placeholder {
+		font: $placeholder-font;
+		color: $placeholder-color;
+	}
+
+	&:-ms-input-placeholder {
+		font: $placeholder-font;
+		color: $placeholder-color;
+	}
+}
+
+@mixin flex-width($width) {
+	width: 100%;
+	max-width: $width;
+}

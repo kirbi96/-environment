@@ -1,0 +1,92 @@
+@import "src/static/styles/vars/vars";
+@import "src/static/styles/common_classes/common";
+
+.btn {
+	line-height: 1;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+	font-weight: 500 !important;
+	font-size: $font__size-sm !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 30px !important;
+	border-radius: 100px;
+	transition: background 0.3s;
+	position: relative;
+
+	.loader {
+		max-width: 100% !important;
+		height: 100% !important;
+		@extend .pos-abs;
+	}
+
+	&._in-process {
+		color: transparent !important;
+	}
+}
+.btn--full {
+	width: 100%;
+}
+
+.btn--border-acent {
+	color: #fff;
+	box-shadow: inset 0 0 0 1px $blueColor;
+}
+
+.btn--border-acent:hover {
+	box-shadow: inset 0 0 0 1px #096ae9;
+}
+
+.btn--border-white {
+	color: $blueColor;
+	box-shadow: inset 0 0 0 1px #fff;
+}
+
+.btn--fill-acent {
+	background: $blueColor;
+	color: #fff !important;
+
+	&:hover {
+		background: #096ae9;
+	}
+}
+
+.btn--fill-bg {
+	background: $bgColor;
+	color: $blueColor;
+
+	&:hover {
+		background: #d5daea;
+	}
+}
+
+.btn--fill-white {
+	background: #fff;
+	color: $blueColor;
+
+	&:hover {
+		background: $bgColor;
+	}
+}
+
+.btn--color-red {
+	background: $bgColor;
+	color: #eb3131;
+}
+
+.btn--color-green {
+	background: $bgColor;
+	color: #0cbc08;
+}
+
+.btn--xl {
+	font-size: 16px !important;
+	padding: 14px 35px !important;
+}
+
+.btn--xs {
+	font-size: 13px !important;
+	padding: 8px 24px !important;
+}

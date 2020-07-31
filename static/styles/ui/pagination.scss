@@ -1,0 +1,36 @@
+.pagination {
+	border-radius: 100px;
+	background: $bgColor;
+	padding: 15px;
+	margin-top: 30px;
+
+	&__list {
+		button {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: $font__size-xs;
+			background: #fff;
+			color: #212a40;
+			border-radius: 100px;
+			margin-right: 10px;
+			width: 32px;
+			height: 32px;
+
+			&:last-child {
+				margin: 0 !important;
+			}
+
+			&.is-active {
+				color: #fff;
+				background: $darkColor;
+			}
+		}
+	}
+
+	.btn--xs {
+		padding-top: 9px !important;
+		padding-bottom: 9px !important;
+	}
+}

@@ -1,0 +1,171 @@
+$fLight: "../../fonts/SF_UI/Light/SFUIDisplay-Light";
+$fRegular: "../../fonts/SF_UI/Regular/SFUIDisplay-Regular";
+$fMedium: "../../fonts/SF_UI/Medium/SFUIDisplay-Medium";
+$fBold: "../../fonts/SF_UI/Bold/SFUIDisplay-Bold";
+$iFont: "../../fonts/Icons/paycollect-icons";
+
+@font-face {
+	font-family: "SFUIDisplay";
+	src: url("#{$fLight}.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "SFUIDisplay";
+	src: url("#{$fRegular}.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "SFUIDisplay";
+	src: url("#{$fMedium}.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "SFUIDisplay";
+	src: url("#{$fBold}.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "icons";
+	src: url("#{$iFont}.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+.ifont {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+
+	&:before {
+		font-family: "icons";
+		font-style: normal;
+		font-weight: normal;
+		font-smoothing: antialiased;
+	}
+}
+
+.icon-close:before {
+	content: "\0041";
+}
+.icon-arrow-down:before {
+	content: "\0042";
+}
+.icon-bell:before {
+	content: "\0043";
+}
+.icon-wallet:before {
+	content: "\0044";
+}
+.icon-social-vk:before {
+	content: "\0045";
+}
+.icon-social-fb:before {
+	content: "\0046";
+}
+.icon-social-tg:before {
+	content: "\0047";
+}
+.icon-social-inst:before {
+	content: "\0048";
+}
+.icon-social-youtube:before {
+	content: "\0049";
+}
+.icon-menu-home:before {
+	content: "\004a";
+}
+.icon-menu-my-loans:before {
+	content: "\004b";
+}
+.icon-menu-my-debts:before {
+	content: "\004c";
+}
+.icon-menu-finance:before {
+	content: "\004d";
+}
+.icon-menu-my-cards:before {
+	content: "\004e";
+}
+.icon-menu-faq:before {
+	content: "\004f";
+}
+.icon-menu-cmps:before {
+	content: "\0050";
+}
+.icon-menu-blog:before {
+	content: "\0051";
+}
+.icon-chat:before {
+	content: "\006d";
+}
+.icon-basket:before {
+	content: "\0052";
+}
+.icon-pie-chart:before {
+	content: "\0053";
+}
+.icon-info:before {
+	content: "\0054";
+}
+.icon-calendar:before {
+	content: "\0055";
+}
+.icon-social-fb-fill:before {
+	content: "\0056";
+}
+.icon-social-wa:before {
+	content: "\0057";
+}
+.icon-social-tg:before {
+	content: "\0058";
+}
+.icon-social-vk-fill:before {
+	content: "\0059";
+}
+.icon-plus:before {
+	content: "\005a";
+}
+.icon-check:before {
+	content: "\0061";
+}
+.icon-social-tg-fill:before {
+	content: "\0062";
+}
+.icon-circle-check:before {
+	content: "\0063";
+}
+.icon-quote:before {
+	content: "\0064";
+}
+.icon-social-twitter-fill:before {
+	content: "\0065";
+}
+.icon-social-google-plus:before {
+	content: "\0066";
+}
+.icon-loop:before {
+	content: "\0067";
+}
+.icon-upload:before {
+	content: "\0068";
+}
+.icon-document:before {
+	content: "\0069";
+}
+.icon-sort-blocks:before {
+	content: "\006a";
+}
+.icon-sort-list:before {
+	content: "\006b";
+}
+.icon-circle-check:before {
+	content: "\006c";
+}

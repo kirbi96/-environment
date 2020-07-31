@@ -1,0 +1,224 @@
+/* Block */
+.block {
+	margin-bottom: 40px;
+	border-radius: 10px 50px 10px 50px;
+	padding: 30px;
+
+	&--border {
+		border: 2px solid $bgColor;
+	}
+	&--no-padding {
+		padding: 0 !important;
+	}
+	&--white-bg {
+		background: #fff;
+	}
+	&--shadow {
+		box-shadow: 2.463px 3.152px 28px 0px rgba(30, 40, 47, 0.08);
+	}
+	&--mb0 {
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font-weight: 300;
+		margin-bottom: 30px;
+		line-height: 1.3;
+		font-size: 2rem;
+	}
+}
+
+/* Money transfer block */
+.money-transfer-wrapper {
+	box-shadow: inset 0 0 0 2px $bgColor;
+	border-radius: 10px 10px 40px 10px;
+}
+
+.block-money-transfer {
+	background: #fff;
+	padding: 25px 25px 25px 110px;
+	border-radius: 10px 10px 40px 10px;
+
+	.form {
+		flex-wrap: nowrap;
+	}
+
+	img {
+		left: 25px;
+	}
+
+	.money-transfer__title {
+		font-size: $font__size-lg;
+		margin-bottom: 15px;
+	}
+
+	.input {
+		padding: 10px 17px;
+		margin: 0 10px 0 0;
+	}
+
+	.btn {
+		padding: 10px 24px !important;
+	}
+
+	p {
+		color: #91939b;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+
+.block-money-transfer--no-bg {
+	background: transparent;
+}
+.block-money-transfer--shadow {
+	box-shadow: 2.463px 3.152px 38px 0px rgba(30, 40, 47, 0.08);
+}
+
+/* Documents */
+.block-documents {
+	padding-bottom: 0 !important;
+}
+
+/* Work start steps */
+.block-start-steps {
+	.h3 {
+		color: #302549;
+		opacity: 0.6;
+		margin-bottom: 30px;
+	}
+}
+
+/* My cards & Legal entities */
+.block-object-list {
+	@include flex-width(460px);
+}
+
+.block-add-object {
+	@include flex-width(400px);
+
+	.h1 {
+		color: $blueColor;
+	}
+
+	.add-object__wrapper {
+		margin-top: 30px;
+		box-shadow: inset 0 0 0 2px $bgColor;
+		border-radius: 10px 10px 10px 40px;
+		padding: 30px;
+		background: #fff;
+	}
+
+	.tabs__switchers {
+		margin-bottom: 25px;
+
+		span {
+			margin-right: 15px;
+			color: #3b3151;
+		}
+
+		.tabs__switcher {
+			width: 34px;
+			height: 34px;
+			margin-right: 12px;
+			background: $bgColor;
+			font-size: 1.125rem;
+
+			&[data-state="is-active"] {
+				color: #fff;
+				background: $blueColor;
+			}
+		}
+	}
+
+	.tabs__des {
+		font-size: $font__size-xs;
+		margin-bottom: 25px;
+		color: rgba(59, 49, 81, 0.7);
+	}
+
+	.tabs__btns {
+		.btn {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.input--file-upload {
+		border: 2px dashed rgba(52, 105, 186, 0.3);
+		padding: 8px 15px 8px 46px !important;
+		background: #fff !important;
+		height: auto;
+		color: $blueColor;
+
+		i {
+			left: 13px;
+			font-size: 22px;
+		}
+	}
+
+	label {
+		margin-bottom: 5px;
+		color: rgba(59, 49, 81, 0.4);
+	}
+
+	input {
+		padding: 13px 10px !important;
+		margin-top: 0 !important;
+
+		&[type="bank_card"] {
+			font-size: $font__size-sm;
+			padding: 20px;
+			// .placeholder-style($font__size-smd $font__main}, rgba(19, 29, 54, 0.5);
+		}
+	}
+
+	.what-is-cvv {
+		color: $blueColor;
+		text-decoration: underline;
+		font-size: 0.8rem;
+	}
+
+	.valid-date {
+		width: 110px;
+		margin-right: 20px;
+	}
+
+	.cvv {
+		width: 160px;
+
+		input {
+			margin-right: 16px;
+			width: 70px;
+		}
+	}
+
+	.field {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media #{$mediaXl} {
+	.block {
+		padding: 20px;
+		border-radius: 10px 30px 10px 30px;
+	}
+}
+
+@media #{$mediaLg} {
+	.block {
+		margin-bottom: 30px;
+	}
+}
+
+@media #{$mediaMd} {
+	.block__title {
+		.p-title {
+			margin-bottom: 15px;
+		}
+	}
+}

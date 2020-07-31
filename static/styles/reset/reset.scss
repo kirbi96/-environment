@@ -1,0 +1,219 @@
+@import "src/static/styles/vars/vars";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+#root {
+	overflow-x: hidden;
+	overflow-scrolling: touch;
+	height: 100%;
+}
+#root {
+	display: flex;
+	flex-direction: column;
+}
+html {
+	-webkit-text-size-adjust: none;
+	transition: transform 0.3s;
+
+	&.is-hidden {
+		overflow: hidden;
+	}
+
+	&.is-menu-visible {
+		#menu_trigger span {
+			background: transparent;
+
+			&:before,
+			&:after {
+				top: 50%;
+			}
+			&:before {
+				transform: rotate(45deg);
+			}
+			&:after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+body {
+	min-height: auto;
+	font: 400 #{$font__size}/#{$font__line-height-body} $font__main;
+	font-smoothing: antialiased;
+	text-rendering: auto;
+	color: $textColor;
+
+	//  @media $mediaMd {
+	//  font-size: $font__size--mobile !important;
+	//}
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+input,
+textarea,
+button,
+select {
+	-webkit-appearance: none;
+	font-family: inherit;
+	resize: none;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	padding: 0;
+}
+button {
+	user-select: none;
+}
+img {
+	border: 0;
+	vertical-align: top;
+
+	//&.lazyload {
+	//  opacity: 0;
+	//  will-change: opacity;
+	//  transition: all .15s;
+	//}
+	//
+	//&.lazyloaded {
+	//  opacity: 1;
+	//}
+}
+
+#main-content {
+	width: 100%;
+	flex: 1;
+	margin-bottom: 30px;
+
+	& > .container {
+		height: 100%;
+	}
+}
+.wrap-row {
+	height: 100%;
+}

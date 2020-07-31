@@ -1,0 +1,14 @@
+.devider-line {
+	height: 2px;
+	margin: 40px 0;
+	background: #f0f2f7;
+
+	&._transparent {
+		margin: 20px 0;
+		background: transparent;
+	}
+
+	@media #{$mediaXl} {
+		margin: 30px 0;
+	}
+}
